@@ -75,10 +75,6 @@ In this step, you need to firstly specify model & difficulty score paths in orde
 ```
 CUDA_VISIBLE_DEVICES="0,1,2,3" python train.py
 ```
-=======
-The training code is coming soon.
->>>>>>> 2945096e1ce76503a240890cde94f4397f125f6e
-
 ## Contact
 
 If you have any questions about this work, please contact the author by email at cyzhao@njust.edu.cn
