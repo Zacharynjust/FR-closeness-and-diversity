@@ -54,7 +54,6 @@ python evaluate.py --opt eval
 
 ## Training
 
-<<<<<<< HEAD
 ### 1) Customize the config file
 
 This repo provides a training script to represent our paper, all you need is to specify training settings in `config.py`. Because a two-stage pipeline is adopted in our paper, we also provide the code to train vanilla ArcFace, see `pretrain.py` 
