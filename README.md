@@ -54,7 +54,31 @@ python evaluate.py --opt eval
 
 ## Training
 
+<<<<<<< HEAD
+### 1) Customize the config file
+
+This repo provides a training script to represent our paper, all you need is to specify training settings in `config.py`. Because a two-stage pipeline is adopted in our paper, we also provide the code to train vanilla ArcFace, see `pretrain.py` 
+
+### 2) Train with ArcFace
+
+Train plain ArcFace for a few epochs (e.g. 4) to get stable difficulty scores. 
+
+Note that you need to manually specify `pretrain` setting entry in `config.py`
+
+```
+CUDA_VISIBLE_DEVICES="0,1,2,3" python pretrain.py --opt pretrain
+```
+
+### 3) Train with Proposed Framework
+
+In this step, you need to firstly specify model & difficulty score paths in order to resume the pretrained model.
+
+```
+CUDA_VISIBLE_DEVICES="0,1,2,3" python train.py
+```
+=======
 The training code is coming soon.
+>>>>>>> 2945096e1ce76503a240890cde94f4397f125f6e
 
 ## Contact
 
